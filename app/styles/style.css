@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#game{
+	width: 164px;
+	height: 164px;
+	border: 1px solid #333;
+	margin: 0 auto;
+	position: relative;
+}
+
+.field{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid #333;
+	/*margin: 3px;*/
+	text-align: center;
+	position: absolute;
+
+	background-color: #EAA030;
+}
+
+/*.field:last-child{
+	display: none;
+}*/
+
+.id1{
+	top: 3px;
+	left: 3px;
+}
+
+.id2{
+	top: 3px;
+	left: 56px;
+}
+
+.id3{
+	top: 3px;
+	left: 109px;
+}
+
+.id4{
+	top: 56px;
+	left: 3px;
+}
+
+.id5{
+	top: 56px;
+	left: 56px;
+}
+
+.id6{
+	top: 56px;
+	left: 109px;
+}
+
+.id7{
+	top: 109px;
+	left: 3px;
+}
+
+.id8{
+	top: 109px;
+	left: 56px;
+}
+
+.id9{
+	top: 109px;
+	left: 109px;
+}
