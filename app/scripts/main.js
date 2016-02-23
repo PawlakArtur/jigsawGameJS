@@ -1,5 +1,4 @@
 var noNr = 9;
-<<<<<<< HEAD
 start();
 moveBlock();
 
@@ -23,24 +22,6 @@ function shuffle(array) {
         array[j] = temp;
     }
     return array;
-=======
-setNumbers();
-moveBlock();
-
-function setNumbers(){
-	var number = 0;
-	var numbers = [];
-	for(var i = 0; i < 8; i++){
-		number = Math.floor((Math.random() * 9) + 1);
-		if(numbers[number] === undefined){
-
-		}
-	}
-
-	[].forEach.call(numbers, function(nr){
-		console.log(nr);
-	});
->>>>>>> origin/master
 }
 
 function moveBlock(){
@@ -70,18 +51,10 @@ function checkNumber(arg){
 		if(i % 3 === 0 && i < 9){
 
 		}else{
-<<<<<<< HEAD
-=======
-			//console.log("+1: " + one);
->>>>>>> origin/master
 			result.push(one);
 		}
 	}
 	if(two > 0 && two < 10){
-<<<<<<< HEAD
-=======
-		//console.log("+3: " + two);
->>>>>>> origin/master
 		result.push(two);
 	}
 
@@ -93,19 +66,11 @@ function checkNumber(arg){
 		if(i === tmp){
 
 		}else{
-<<<<<<< HEAD
-=======
-			//console.log("-1: " + three);
->>>>>>> origin/master
 			result.push(three);
 		}
 	}
 
 	if(four > 0 && four < 10){
-<<<<<<< HEAD
-=======
-		//console.log("+3 : " + four);
->>>>>>> origin/master
 		result.push(four);
 	}
 	
@@ -119,10 +84,6 @@ function checkNumber(arg){
 	}
 	for(var jk = 0; jk <= m.length; jk++){
 		if(m[jk] === 1 && noNr === (arg + 1)){
-<<<<<<< HEAD
-=======
-			// el[0].style.left = 109 + "px";
->>>>>>> origin/master
 			pozycja = (el[0].offsetLeft - 1);
 			el[0].style.left = pozycja + 53 + "px";
 			console.log("ruszam w prawo");
@@ -135,18 +96,9 @@ function checkNumber(arg){
 				el[0].innerHTML = "";
 			}, 301);
 			
-<<<<<<< HEAD
 			noNr = arg;
 			console.log("puste pole: " + noNr);
 		}else if(m[jk] === -1 && noNr === (arg - 1)){
-=======
-			// el[0].classList.add("id" + noNr);
-			// el[0].classList.remove("id" + arg);
-			noNr = arg;
-			console.log("puste pole: " + noNr);
-		}else if(m[jk] === -1 && noNr === (arg - 1)){
-			// el[0].style.left = 3 + "px";
->>>>>>> origin/master
 			pozycja = (el[0].offsetLeft - 1);
 			el[0].style.left = pozycja - 53 + "px";
 			console.log("ruszam w lewo");
@@ -159,18 +111,9 @@ function checkNumber(arg){
 				el[0].innerHTML = "";
 			}, 301);
 
-<<<<<<< HEAD
 			noNr = arg;
 			console.log("puste pole: " + noNr);
 		}else if(m[jk] === 3 && noNr === (arg + 3)){
-=======
-			// el[0].classList.add("id" + noNr);
-			// el[0].classList.remove("id" + arg);
-			noNr = arg;
-			console.log("puste pole: " + noNr);
-		}else if(m[jk] === 3 && noNr === (arg + 3)){
-			// el[0].style.top = 109 + "px";
->>>>>>> origin/master
 			pozycja = (el[0].offsetTop - 1);
 			el[0].style.top = pozycja + 53 + "px";
 			console.log("ruszam w dół");
@@ -183,18 +126,9 @@ function checkNumber(arg){
 				el[0].innerHTML = "";
 			}, 301);
 
-<<<<<<< HEAD
 			noNr = arg;
 			console.log("puste pole: " + noNr);
 		}else if(m[jk] === -3 && noNr === (arg - 3)){
-=======
-			// el[0].classList.add("id" + noNr);
-			// el[0].classList.remove("id" + arg);
-			noNr = arg;
-			console.log("puste pole: " + noNr);
-		}else if(m[jk] === -3 && noNr === (arg - 3)){
-			// el[0].style.top = 3 + "px";
->>>>>>> origin/master
 			pozycja = (el[0].offsetTop - 1);
 			el[0].style.top = pozycja - 53 + "px";
 			console.log("ruszam w górę");
@@ -207,11 +141,6 @@ function checkNumber(arg){
 				el[0].innerHTML = "";
 			}, 301);
 
-<<<<<<< HEAD
-=======
-			// el[0].classList.add("id" + noNr);
-			// el[0].classList.remove("id" + arg);
->>>>>>> origin/master
 			noNr = arg;
 			console.log("puste pole: " + noNr);
 		}
@@ -231,13 +160,4 @@ function check(){
 	}else{
 		console.log("nierówne");
 	}
-<<<<<<< HEAD
-=======
-	// if(flag === true){
-	// 	console.log("Wygrałeś!");
-	// 	alert("Wygrałeś!");
-	// }else if(flag === false){
-	// 	console.log("Przegrałeś!");
-	// }
->>>>>>> origin/master
 }
